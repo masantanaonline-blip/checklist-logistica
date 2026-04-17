@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checklist Logística</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        input, select { width: 100%; padding: 8px; margin: 5px 0; }
+        h3 { background: #eee; padding: 10px; }
+        button { padding: 10px; width: 100%; background: green; color: white; border: none; }
+    </style>
+</head>
+<body>
+
+<h2>Checklist Logística</h2>
+
+<form method="post">
+
+<h3>Dados da Carga</h3>
+<input name="transportador" placeholder="Transportador" required>
+<input name="motorista" placeholder="Motorista">
+<input name="carga" placeholder="Nº da carga">
+
+<h3>Separação</h3>
+<select name="turno">
+    <option>1º Turno</option>
+    <option>2º Turno</option>
+</select>
+<input name="separador" placeholder="Ajudante">
+<input name="qtd_sep" placeholder="Quantidade Paletes">
+
+<h3>Conferência</h3>
+<input name="conferente" placeholder="Conferente">
+<input name="qtd_conf" placeholder="Quantidade Conferida">
+
+<h3>Carregamento</h3>
+<input name="operador" placeholder="Operador">
+<input type="time" name="inicio">
+<input type="time" name="fim">
+
+<button type="submit">Salvar</button>
+
+</form>
+
+</body>
+</html>
